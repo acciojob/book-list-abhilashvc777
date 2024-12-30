@@ -11,14 +11,14 @@ btn.addEventListener("click", ()=>{
 	const td = `<td>${title.value}</td>
 			<td>${author.value}</td>
 			<td>${isbn.value}</td>
-			<td><button class="cancelbtn">x</button><td>`
+			<td><button class="delete">x</button><td>`
    const	tr = document.createElement("tr")
 	tr.innerHTML = td
 	tbody.appendChild(tr)
 // const cancelbtn = document.querySelectorAll(".cancelbtn")
 	// let i = 0;
   tbody.addEventListener("click",(e)=>{
-const cancelbtn = document.querySelectorAll(".cancelbtn")
+// const cancelbtn = document.querySelectorAll(".delete")
 		  e.target.closest("tr").remove()
   })
 })
