@@ -15,11 +15,10 @@ btn.addEventListener("click", ()=>{
    const	tr = document.createElement("tr")
 	tr.innerHTML = td
 	tbody.appendChild(tr)
-const cancelbtn = document.querySelectorAll(".cancelbtn")
-	let i = 0;
+// const cancelbtn = document.querySelectorAll(".cancelbtn")
+	// let i = 0;
   tbody.addEventListener("click",(e)=>{
-	  i++
-	  // let cancel = e.target.
-	e.target.closest("tr").remove()
+const cancelbtn = document.querySelectorAll(".cancelbtn")
+		  e.target.closest("tr").remove()
   })
 })
